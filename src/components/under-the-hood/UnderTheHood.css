@@ -1,0 +1,31 @@
+/*.under-the-hood {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: wrap;*/
+/*    width: 55%;*/
+/*}*/
+.under-the-hood {
+    width: 55%;
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.call-stack-section {
+    display: flex;
+    width: 50%;
+    height: 40vh;
+}
+
+.web-apis-section {
+    display: flex;
+    width: 50%;
+    height: 40vh;
+}
+
+.event-loop-section {
+    display: flex;
+    align-items: center;
+}
+

@@ -1,0 +1,58 @@
+.code {
+    display: flex;
+    flex: 1 1 50%;
+    overflow: auto;
+    margin: 0;
+    max-height: 60vh;
+    background-color: hsl(228, 8%, 12%);
+    border-left: solid 2px hsl(0deg 0% 28%);
+
+    .token.punctuation.highlight {
+        opacity: 1;
+    }
+
+    .running-marker {
+        position: absolute;
+        background-color: transparent;
+    }
+
+    .running-marker.transition {
+        background-color: hsl(218deg 55% 37%);
+        transition-property: background;
+        transition-duration: calc(var(--loop-spin-duration-ms) / 2);
+    }
+
+    .running-marker.transition.async {
+        transition-delay: calc(var(--loop-spin-duration-ms) / 2);
+    }
+
+    button {
+        --width: 100px;
+        position: absolute;
+        margin-top: calc(60vh - 48px);
+        margin-left: calc(var(--width) * (-1));
+        z-index: 99;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: hsla(240, 100%, 70%, 1);
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsla(240, 100%, 60%, 1);
+    }
+
+    button:active {
+        background-color: hsla(240, 100%, 50%, 1)
+    }
+
+    button:disabled {
+        background-color: hsla(240, 100%, 70%, 0.5);
+        cursor: not-allowed;
+    }
+
+}
+

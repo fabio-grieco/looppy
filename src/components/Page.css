@@ -1,0 +1,25 @@
+.page {
+    button {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: hsla(240, 100%, 70%, 1);
+        padding: 8px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: hsla(240, 100%, 60%, 1)
+    }
+
+    button:active {
+        background-color: hsla(240, 100%, 50%, 1)
+    }
+
+    button:disabled {
+        background-color: hsla(240, 100%, 70%, 0.5);
+        cursor: not-allowed;
+    }
+}
+

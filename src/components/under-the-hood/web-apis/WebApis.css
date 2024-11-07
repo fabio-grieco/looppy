@@ -1,0 +1,107 @@
+.web-apis-section {
+    .web-apis {
+        display: flex;
+        flex-direction: column;
+        margin-right: 16px;
+        margin-left: 8px;
+        margin-top: 24px;
+        border: solid 4px white;
+        border-radius: 8px;
+        width: 100%;
+        overflow-x: auto;
+        font-size: 14px;
+
+        > .title {
+            position: absolute;
+            margin-top: -20px;
+            margin-left: 24px;
+            background: #121212;
+            border: solid 4px white;
+            padding: 4px;
+            outline: solid 2px #121212;
+        }
+
+        pre {
+            font-size: 14px;
+        }
+
+        .timers, .promises, .event-listeners {
+            display: flex;
+            flex-direction: column;
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                border-bottom: solid 1px;
+                padding: 4px;
+
+                .item-section {
+                    border-top: solid 1px;
+                }
+
+                .item-property {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                    padding: 4px;
+                }
+
+                .item-property {
+                    > div:first-child {
+                        font-weight: bold;
+                    }
+
+                    pre {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .item-enter {
+                opacity: 0;
+            }
+
+            .item-enter-active {
+                opacity: 1;
+                transition-property: opacity;
+                transition-duration: calc(var(--loop-spin-duration-ms) / 2);
+            }
+
+            .item-exit {
+                opacity: 1;
+            }
+
+            .item-exit-active {
+                opacity: 0;
+                transition-property: opacity;
+                transition-duration: calc(var(--loop-spin-duration-ms) / 2);
+            }
+        }
+
+        .event-listeners {
+            .item:before {
+                content: "Event";
+                color: #747bff;
+            }
+        }
+
+        .promises {
+            margin-top: 20px;
+
+            .item:before {
+                content: "Promise";
+                color: #747bff;
+            }
+        }
+
+        .timers {
+            .item:before {
+                content: "Timer";
+                color: #747bff;
+            }
+        }
+
+    }
+}

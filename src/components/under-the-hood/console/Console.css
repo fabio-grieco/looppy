@@ -1,0 +1,26 @@
+.console {
+    flex: 1;
+    background-color: hsl(0deg 0% 16%);
+    overflow: auto;
+
+    .title {
+        border-top: solid 2px hsl(0deg 0% 28%);
+        border-bottom: solid 2px hsl(0deg 0% 28%);
+        background-color: hsl(0deg 0% 24%);
+        padding-left: 8px;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .console-content {
+        margin: 0;
+        font-size: 18px;
+        padding: 8px;
+    }
+
+}
