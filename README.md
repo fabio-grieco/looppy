@@ -2,4 +2,4 @@
 
 JS event loop visualized
 
-[Try here](https://looppy.pages.dev/)
+[Try it here](https://looppy.pages.dev/)
