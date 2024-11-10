@@ -3,7 +3,7 @@ import "./UnderTheHood.css"
 import CallStack from "./call-stack/CallStack.jsx";
 import WebApis from "./web-apis/WebApis.jsx";
 import Queues from "./queues/Queues.jsx";
-import EventLoop from "./event-lopp/EventLoop.jsx";
+import EventLoop from "./event-loop/EventLoop.jsx";
 
 function UnderTheHood() {
     return <div className="under-the-hood">
