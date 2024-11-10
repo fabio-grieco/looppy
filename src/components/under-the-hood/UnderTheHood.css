@@ -1,9 +1,3 @@
-/*.under-the-hood {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    flex-wrap: wrap;*/
-/*    width: 55%;*/
-/*}*/
 .under-the-hood {
     width: 55%;
     .row {
