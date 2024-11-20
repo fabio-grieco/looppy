@@ -65,8 +65,7 @@
 
             .item-enter-active {
                 opacity: 1;
-                transition-property: opacity;
-                transition-duration: calc(var(--loop-spin-duration-ms) / 2);
+                transition: opacity 300ms;
             }
 
             .item-exit {
@@ -75,8 +74,7 @@
 
             .item-exit-active {
                 opacity: 0;
-                transition-property: opacity;
-                transition-duration: calc(var(--loop-spin-duration-ms) / 2);
+                transition: opacity 300ms;
             }
         }
 

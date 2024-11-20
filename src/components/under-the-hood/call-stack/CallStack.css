@@ -33,12 +33,12 @@
         .item-enter-active {
             opacity: 1;
             transition-property: opacity, transform;
-            transition-duration: calc(var(--loop-spin-duration-ms) / 2);
+            transition-duration: 600ms;
             transform: translateY(0);
         }
 
         .item-enter-active.async {
-            transition-delay: calc(var(--loop-spin-duration-ms) / 2);
+            transition-delay: 300ms;
         }
 
         .item-exit {
@@ -48,7 +48,7 @@
         .item-exit-active {
             opacity: 0;
             transition-property: opacity, transform;
-            transition-duration: calc(var(--loop-spin-duration-ms) / 2);
+            transition-duration: 300ms;
             transform: translateY(-16px);
         }
 

@@ -1,23 +1,18 @@
 import {useSnapshot} from "valtio";
 import {state} from "../../../adapters/state.js";
 import Code from "../../Code.jsx";
-import {useTransitionGroup} from "../hooks/useTransitionGroup.js";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 
 function Timers() {
     const {value} = useSnapshot(state)
-    const {items, timeoutMs} = useTransitionGroup(value.webApis.timers)
 
     return <TransitionGroup className="timers">
-        {items.map(({callback, timeout, nodeRef}, index) => {
+        {value.webApis.timers.map(({callback, timeout, nodeRef}, index) => {
             return <CSSTransition
                 in={true}
                 key={index}
                 nodeRef={nodeRef}
-                timeout={{
-                    enter: timeoutMs,
-                    exit: timeoutMs,
-                }}
+                timeout={300}
                 classNames="item"
                 unmountOnExit
             >
